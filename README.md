@@ -80,6 +80,12 @@ Useful feedback includes:
 - edge-case data formats
 - different language and country-specific formats
 
+## Feedback
+
+If you want to report missed detections, incorrect masking, or unexpected behavior, you can use this form:
+
+[Submit feedback](https://forms.gle/6VipkTmwfkr1N6u37)
+
 ## Privacy Policy
 
 Privacy Policy:  
