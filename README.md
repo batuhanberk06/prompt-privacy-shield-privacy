@@ -2,38 +2,42 @@
 
 Prompt Privacy Shield is a browser extension that helps detect and mask sensitive information in text before it is sent to AI tools.
 
-The extension **runs locally in the browser**, **does not use AI**, and **does not collect user data**. Its goal is to reduce the risk of accidentally sending sensitive information such as email addresses, phone numbers, IBANs, card-related data, API keys, and similar patterns while sharing prompts.
+The extension **runs locally in the browser**, **does not use AI**, and **does not collect user data**. Its goal is to reduce the risk of accidentally sending sensitive information such as email addresses, phone numbers, IBANs, card-related data, API keys, crypto wallet addresses, and similar patterns while sharing prompts.
 
 ## What it does
 
 - Helps detect common types of sensitive data in prompts
 - Masks detected content to produce safer output
+- Adds a **Clean Prompt** button on supported AI sites to sanitize prompts directly before sending
 - Can also protect custom sensitive words defined by the user
 
 ## What it can detect
 
 - Email addresses
 - Phone numbers
-- IBANs
-- Some card and payment-related data patterns
-- API keys / token-like strings
-- Crypto wallet addresses
-- Custom words and phrases defined by the user
+- IBANs and payment-related patterns
+- API keys and tokens
+- Bank card numbers
+- Crypto wallet addresses (BTC, ETH, LTC, TRX, SOL)
+- SSN and ABA routing numbers (US)
+- VAT numbers (EU)
+- Custom sensitive words and phrases defined by the user
 
 ## How to use
 
-Prompt Privacy Shield can be used in two ways:
+Prompt Privacy Shield can be used in three ways:
 
 1. Open the extension popup and paste text into it
-2. Select text on a web page and use the **Sanitize & Copy** option from the right-click menu
+2. On supported AI sites, use the **Clean Prompt** button to sanitize your prompt directly before sending
+3. Select text on a web page and use the **Sanitize & Copy** option from the right-click menu
 
 ## How it works
 
-The extension processes user-provided or user-selected text **locally inside the browser**.
+The extension processes user-provided text **locally inside the browser**.
 
 Its workflow is simple:
 
-1. The user pastes text into the popup or selects text on a web page
+1. The user pastes text into the popup, uses the **Clean Prompt** button on a supported AI site, or selects text on a web page
 2. The extension scans the text locally
 3. It looks for potentially sensitive patterns using rule-based matching and validation checks
 4. Detected matches are replaced according to the selected masking style
@@ -68,6 +72,7 @@ The extension requests only the minimum permissions needed for its core features
 - **scripting** — to run local sanitization logic in the page context when needed
 - **storage** — to save user preferences and custom protected words locally
 - **contextMenus** — to provide the **Sanitize & Copy** right-click action
+- **Host access on supported AI sites** — to show the **Clean Prompt** button and sanitize prompts in place
 
 ## Feedback
 
@@ -80,11 +85,9 @@ Useful feedback includes:
 - edge-case data formats
 - different language and country-specific formats
 
-## Feedback
-
 If you want to report missed detections, incorrect masking, or unexpected behavior, you can use this form:
 
-[Submit feedback](https://forms.gle/6VipkTmwfkr1N6u37)
+[Submit feedback](https://forms.gle/N4KEvpqEVu2En1xp6)
 
 ## Privacy Policy
 
