@@ -1,175 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prompt Privacy Shield - Privacy Policy</title>
   <style>
-    :root{
-      --bg:#0f172a;
-      --card:#111827;
-      --muted:#94a3b8;
-      --text:#e5e7eb;
-      --line:#1f2937;
-      --accent:#6366f1;
-      --accent2:#3b82f6;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Arial, Helvetica, sans-serif;
-      background:linear-gradient(180deg,#0b1220 0%, #0f172a 100%);
-      color:var(--text);
-      line-height:1.65;
+    h1 {
+      color: #ffffff;
+      font-size: 28px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 12px;
     }
-    .wrap{
-      max-width:900px;
-      margin:0 auto;
-      padding:48px 20px 80px;
+    h2 {
+      color: #93c5fd;
+      font-size: 20px;
+      margin-top: 32px;
     }
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:32px;
-      box-shadow:0 12px 40px rgba(0,0,0,.25);
+    p, li {
+      color: #cbd5e1;
+      font-size: 15px;
     }
-    .badge{
-      display:inline-block;
-      padding:8px 14px;
-      border-radius:999px;
-      background:linear-gradient(90deg,var(--accent),var(--accent2));
-      color:#fff;
-      font-size:13px;
-      font-weight:700;
-      margin-bottom:18px;
+    ul {
+      padding-left: 20px;
     }
-    h1{
-      margin:0 0 12px;
-      font-size:34px;
-      line-height:1.2;
-      color:#fff;
+    li {
+      margin-bottom: 4px;
     }
-    h2{
-      margin:28px 0 10px;
-      font-size:21px;
-      color:#fff;
+    a {
+      color: #60a5fa;
     }
-    p, li{
-      color:var(--text);
-      font-size:16px;
+    .effective {
+      color: #94a3b8;
+      font-size: 14px;
     }
-    .muted{
-      color:var(--muted);
-    }
-    ul{
-      padding-left:22px;
-    }
-    .box{
-      background:#0b1220;
-      border:1px solid #243041;
-      border-radius:14px;
-      padding:18px;
-      margin:18px 0;
-    }
-    a{
-      color:#93c5fd;
-    }
-    .footer{
-      margin-top:28px;
-      font-size:14px;
-      color:var(--muted);
+    .footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #334155;
+      color: #64748b;
+      font-size: 13px;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="badge">Prompt Privacy Shield</div>
-      <h1>Privacy Policy</h1>
-      <p class="muted">Effective date: March 17, 2026</p>
 
-      <p>
-        Prompt Privacy Shield is a browser extension designed to help users detect and mask sensitive
-        information before sending prompts to AI tools.
-      </p>
+<h1>Privacy Policy</h1>
+<p class="effective">Effective date: March 19, 2026</p>
 
-      <h2>What the extension does</h2>
-      <p>
-        The extension scans text provided by the user or text explicitly selected by the user in order
-        to identify common sensitive data patterns such as email addresses, phone numbers, IBANs,
-        payment-related data, API keys, card numbers, crypto wallet addresses, and custom protected words.
-      </p>
-      <p>
-        On supported AI websites, the extension may also display a local <strong>Clean Prompt</strong> button
-        near the prompt input area. When the user clicks this button, the extension sanitizes the prompt
-        directly in the page before it is sent.
-      </p>
+<p>
+  Prompt Privacy Shield is a browser extension designed to help users detect and mask sensitive information
+  before sending prompts to AI tools. This privacy policy explains what the extension does, how it processes data,
+  and what rights and protections users have.
+</p>
 
-      <h2>How data is processed</h2>
-      <div class="box">
-        <p>
-          All processing is performed locally in the user’s browser.
-          Prompt Privacy Shield does not send scanned text or prompts to our servers.
-        </p>
-      </div>
+<h2>What the extension does</h2>
+<p>
+  The extension scans text provided by the user in order to identify common sensitive data patterns such as
+  email addresses, phone numbers, IBANs, payment-related data, API keys, card numbers, crypto wallet addresses,
+  SSN and ABA routing numbers, VAT numbers, and custom protected words defined by the user.
+</p>
+<p>
+  On supported AI websites (including ChatGPT, Claude, Google Gemini, DeepSeek, Mistral, and Grok),
+  the extension displays a local "Clean Prompt" button near the prompt input area.
+  When the user clicks this button, the extension sanitizes the prompt directly in the page before it is sent.
+  The extension also includes smart detection that may work on AI sites not explicitly listed.
+</p>
 
-      <h2>Data the extension may process</h2>
-      <ul>
-        <li>User-provided text pasted into the extension popup</li>
-        <li>User-selected text from a web page when the user uses the extension’s right-click action</li>
-        <li>Prompt text that the user chooses to sanitize using the Clean Prompt button on supported AI websites</li>
-        <li>User preferences such as masking style, selected region, enabled detection options, and custom protected words</li>
-      </ul>
+<h2>How data is processed</h2>
+<p>
+  All processing is performed locally in the user's browser using a shared detection engine.
+  Prompt Privacy Shield does not send scanned text or prompts to any external server.
+  No AI models or cloud services are used for text analysis.
+</p>
 
-      <h2>Storage</h2>
-      <p>
-        The extension stores user settings locally in the browser using extension storage.
-        These settings may include masking preferences, region settings, enabled scan categories,
-        and custom protected words defined by the user.
-      </p>
+<h2>Data the extension may process</h2>
+<ul>
+  <li>User-provided text pasted into the extension popup</li>
+  <li>User-selected text from a web page when the user uses the extension's right-click "Sanitize & Copy" action</li>
+  <li>Prompt text that the user chooses to sanitize using the Clean Prompt button on supported AI websites</li>
+  <li>User preferences such as masking style, selected region, enabled detection options, and custom protected words</li>
+</ul>
 
-      <h2>What we do not do</h2>
-      <ul>
-        <li>We do not sell user data</li>
-        <li>We do not transfer scanned content or prompts to remote servers for processing</li>
-        <li>We do not use user data for advertising</li>
-        <li>We do not use user data for creditworthiness or lending decisions</li>
-        <li>We do not collect or store the text that users sanitize</li>
-      </ul>
+<h2>Storage</h2>
+<p>
+  The extension stores user settings locally in the browser using extension storage.
+  These settings may include masking preferences, region settings, enabled scan categories,
+  and custom protected words defined by the user. No user content or sanitized text is stored.
+</p>
 
-      <h2>Permissions</h2>
-      <p>
-        Prompt Privacy Shield requests only the permissions required for its core functionality,
-        including access to the active tab when the user interacts with the extension, local storage
-        for saving settings, scripting for on-demand sanitization actions, context menus for the
-        “Sanitize &amp; Copy” feature, and limited host access on supported AI websites to display the
-        Clean Prompt button and sanitize prompts locally in place.
-      </p>
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not sell user data</li>
+  <li>We do not transfer scanned content or prompts to remote servers for processing</li>
+  <li>We do not use user data for advertising</li>
+  <li>We do not use user data for creditworthiness or lending decisions</li>
+  <li>We do not collect or store the text that users sanitize</li>
+  <li>We do not use remote code execution or dynamically loaded scripts</li>
+  <li>We do not track user behavior or browsing activity</li>
+</ul>
 
-      <h2>Third-party services</h2>
-      <p>
-        Prompt Privacy Shield does not use remote code or third-party services to process user text.
-        If the extension includes optional links to third-party pages such as feedback forms, support pages,
-        donation services, or external websites, those services operate under their own privacy policies.
-      </p>
+<h2>Permissions</h2>
+<p>
+  Prompt Privacy Shield requests only the permissions required for its core functionality:
+</p>
+<ul>
+  <li><strong>activeTab</strong> — to work with text from the active tab when the user interacts with the extension</li>
+  <li><strong>storage</strong> — to save user preferences and custom protected words locally</li>
+  <li><strong>scripting</strong> — to run local sanitization logic in the page context for the Clean Prompt button and context menu</li>
+  <li><strong>contextMenus</strong> — to provide the "Sanitize & Copy" right-click action</li>
+  <li><strong>Host access on supported AI sites</strong> — to display the Clean Prompt button and sanitize prompts locally in place</li>
+</ul>
 
-      <h2>Changes to this policy</h2>
-      <p>
-        This privacy policy may be updated from time to time to reflect product changes, compliance needs,
-        or clarification improvements. The latest version will be published on this page.
-      </p>
+<h2>Third-party services</h2>
+<p>
+  Prompt Privacy Shield does not use remote code or third-party services to process user text.
+  If the extension includes optional links to third-party pages such as feedback forms, support pages,
+  donation services, or external websites, those services operate under their own privacy policies.
+</p>
 
-      <h2>Contact</h2>
-      <p>
-        For questions about this privacy policy or the extension, contact:
-        <a href="mailto:bbpisgin@gmail.com">bbpisgin@gmail.com</a>
-      </p>
+<h2>Changes to this policy</h2>
+<p>
+  This privacy policy may be updated from time to time to reflect product changes, compliance needs,
+  or clarification improvements. The latest version will be published on this page.
+</p>
 
-      <div class="footer">
-        Prompt Privacy Shield Privacy Policy
-      </div>
-    </div>
-  </div>
+<h2>Contact</h2>
+<p>
+  For questions about this privacy policy or the extension, contact:
+  <a href="mailto:bbpisgin@gmail.com">bbpisgin@gmail.com</a>
+</p>
+
+<div class="footer">
+  Prompt Privacy Shield &mdash; v1.2.0 &mdash; All processing happens locally. No data is sent anywhere.
+</div>
+
 </body>
 </html>
